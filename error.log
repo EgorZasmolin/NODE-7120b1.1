@@ -994,3 +994,533 @@
   level: 'info',
   timestamp: '2024-04-02T07:55:57.939Z'
 }
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:39:59.622Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:39:59.628Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:39:59.632Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:39:59.633Z'
+}
+{
+  message: 'Executing (default): SELECT `id`, `username`, `title`, `content` FROM `entries` AS `entries`;',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:02.983Z'
+}
+{
+  message: 'Зашли на главную страницу',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:03.004Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:05.718Z'
+}
+{
+  message: "Ошибка в модуле авторизации: TypeError: Cannot read properties of undefined (reading 'email')",
+  level: 'error',
+  timestamp: '2024-04-02T08:40:14.017Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:28.589Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:28.596Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:28.597Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:28.599Z'
+}
+{
+  message: "Ошибка в модуле авторизации: TypeError: Cannot read properties of undefined (reading 'email')",
+  level: 'error',
+  timestamp: '2024-04-02T08:40:28.790Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:30.794Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:30.800Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:30.801Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:30.803Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:33.507Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:33.514Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:33.515Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:33.516Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:35.061Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:35.068Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:35.069Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:35.070Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:37.039Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:37.047Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:40:37.048Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:37.050Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:40:40.224Z'
+}
+{
+  message: 'Ошибка в модуле авторизации: Error: WHERE parameter "email" has invalid "undefined" value',
+  level: 'error',
+  timestamp: '2024-04-02T08:40:43.100Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:00.399Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:00.410Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:00.412Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:00.413Z'
+}
+{
+  message: 'Ошибка в модуле авторизации: Error: WHERE parameter "email" has invalid "undefined" value',
+  level: 'error',
+  timestamp: '2024-04-02T08:41:00.579Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:04.739Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:04.748Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:04.749Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:04.751Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:07.164Z'
+}
+{
+  message: 'Ошибка в модуле авторизации: Error: WHERE parameter "email" has invalid "undefined" value',
+  level: 'error',
+  timestamp: '2024-04-02T08:41:10.718Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:23.589Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:23.595Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:23.597Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:23.598Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:23.799Z'
+}
+{
+  message: 'Ошибка в модуле авторизации: Error: data and hash arguments required',
+  level: 'error',
+  timestamp: '2024-04-02T08:41:23.802Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:34.019Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:34.028Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:34.030Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:34.031Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:35.112Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:35.120Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:35.122Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:35.124Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:36.448Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:36.454Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:36.456Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:36.457Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:37.937Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:37.943Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:37.944Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:37.946Z'
+}
+{
+  message: 'Executing (default): SELECT `id`, `username`, `title`, `content` FROM `entries` AS `entries`;',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:47.084Z'
+}
+{
+  message: 'Зашли на главную страницу',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:47.105Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:41:47.604Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:41:51.335Z'
+}
+{
+  message: 'Ошибка в модуле авторизации: Error: data and hash arguments required',
+  level: 'error',
+  timestamp: '2024-04-02T08:41:51.337Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='entries';",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.515Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`entries`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.522Z'
+}
+{
+  message: "Executing (default): SELECT name FROM sqlite_master WHERE type='table' AND name='users';",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.525Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.550Z'
+}
+{
+  message: 'Executing (default): PRAGMA INDEX_LIST(`users`)',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.551Z'
+}
+{
+  message: 'Token login  transferred successfully',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.617Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.636Z'
+}
+{
+  message: 'Executing (default): SELECT `id`, `username`, `title`, `content` FROM `entries` AS `entries`;',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.639Z'
+}
+{
+  message: 'Зашли на главную страницу',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:04.650Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:07.977Z'
+}
+{
+  message: 'Executing (default): SELECT `id`, `username`, `title`, `content` FROM `entries` AS `entries`;',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:07.979Z'
+}
+{
+  message: 'Зашли на главную страницу',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:07.985Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:09.554Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:09.559Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:09.802Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:09.812Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:09.990Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:09.999Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:10.444Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:10.447Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:10.607Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:10.611Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:12.853Z'
+}
+{
+  message: 'Executing (default): SELECT `id`, `username`, `title`, `content` FROM `entries` AS `entries`;',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:12.858Z'
+}
+{
+  message: 'Зашли на главную страницу',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:12.863Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:14.165Z'
+}
+{
+  message: 'Executing (default): SELECT `id`, `username`, `title`, `content` FROM `entries` AS `entries`;',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:14.168Z'
+}
+{
+  message: 'Зашли на главную страницу',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:14.174Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:14.605Z'
+}
+{
+  message: 'Executing (default): SELECT `id`, `username`, `title`, `content` FROM `entries` AS `entries`;',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:14.617Z'
+}
+{
+  message: 'Зашли на главную страницу',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:14.621Z'
+}
+{
+  message: 'Зашли',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:15.246Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:17.669Z'
+}
+{
+  message: 'Token login  transferred successfully',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:17.730Z'
+}
+{
+  message: "Executing (default): SELECT `id`, `name`, `email`, `password`, `age` FROM `users` AS `users` WHERE `users`.`email` = 'liza@' LIMIT 1;",
+  level: 'info',
+  timestamp: '2024-04-02T08:42:17.738Z'
+}
+{
+  message: 'Executing (default): SELECT `id`, `username`, `title`, `content` FROM `entries` AS `entries`;',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:17.742Z'
+}
+{
+  message: 'Зашли на главную страницу',
+  level: 'info',
+  timestamp: '2024-04-02T08:42:17.745Z'
+}

@@ -1,4 +1,4 @@
-const {User} = require("../models/db");
+const { User } = require("../models/db");
 const jwt = require("jsonwebtoken");
 const logger = require("../logger/index_logger");
 const bcrypt = require("bcrypt");
@@ -6,44 +6,47 @@ require("dotenv").config();
 
 exports.form = (req, res) => {
   res.render("loginForm", { title: "Login" });
-  logger.error("Зашли");
+  logger.info("Зашли");
 };
 
-async function authentificate(dataForm, cb) {
+exports.submit = async (req, res, next) => {
   try {
-    const user = await User.findOne({ where: { email: dataForm.email } });
-    if (!user) return cb();
-    const result = await bcrypt.compare(dataForm.password, user.password);
-    if (result) return cb(null, user);
-    return cb();
-  } catch (err) {
-    return cb(err);
-  }
-}
-
-exports.submit = (req, res, next) => {
-  authentificate(req.body.loginForm, (err, data) => {
-    if (err) return next(err);
-    if (!data) {
-      res.error("Имя или пароль неверный");
-      res.redirect("back"); //
-    } else {
-      req.session.userEmail = data.email;
-      req.session.userName = data.name;
+    const user = await User.findOne({
+      where: { email: req.body.loginForm.email },
+    });
+    if (!user) {
+      logger.info("Пользователь не найден");
+      return res.redirect("back");
+    }
+    const result = await bcrypt.compare(
+      req.body.loginForm.password,
+      user.password
+    );
+    if (result) {
+      req.session.userEmail = req.body.loginForm.email;
+      req.session.userName = req.body.loginForm.name;
       // генерация токена
       const jwt_time = process.env.jwtTime;
-      const token = jwt.sign({ name: data.email }, process.env.jwtToken, {
-        expiresIn: jwt_time,
-      });
+      const token = jwt.sign(
+        { name: req.body.loginForm.email },
+        process.env.jwtToken,
+        {
+          expiresIn: jwt_time,
+        }
+      );
       res.cookie("jwt", token, {
         httpOnly: true,
         maxAge: jwt_time,
       });
 
-      res.redirect("/");
       logger.info("Token login " + " transferred successfully");
+      return res.redirect("/");
     }
-  });
+    logger.error("Неправильный логин или пароль");
+    return res.redirect("back");
+  } catch (err) {
+    logger.error(`Ошибка в модуле авторизации: ${err}`);
+  }
 };
 
 exports.logout = function (req, res, next) {

@@ -1,0 +1,12 @@
+* {
+  font-family: sans-serif;
+}
+.header-link,
+.navbar-brand {
+  color: white;
+}
+
+.links img {
+  max-width: 30px;
+  max-height: 30px;
+}

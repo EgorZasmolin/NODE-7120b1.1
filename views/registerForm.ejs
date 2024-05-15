@@ -8,78 +8,96 @@
     <link rel="stylesheet" href="/css/bootstrap.css" />
   </head>
   <body>
-    <%- include ('./partials/menu') %>
-    <h1><%= title %></h1>
-    <p>Заполните форму ниже чтобы зарегистрироваться</p>
-    <%- include ('./partials/messages') %>
     <div class="container">
-      <form action="/register" method="post">
-        <div class="mb-3 row">
-          <label for="inputName" class="col-4 col-form-label"
-            >Имя пользователя</label
-          >
-          <div class="col-8">
-            <input
-              type="text"
-              class="form-control"
-              name="dataForm[name]"
-              id="inputName"
-              placeholder="User name"
-            />
-          </div>
-        </div>
-
-        <div class="mb-3 row">
-          <label for="inputEmail" class="col-4 col-form-label"
-            >Email пользователя</label
-          >
-          <div class="col-8">
-            <input
-              type="text"
-              class="form-control"
-              name="dataForm[email]"
-              id="inputEmail"
-              placeholder="User email"
-            />
-          </div>
-        </div>
-
-        <div class="mb-3 row">
-          <label for="inputPass" class="col-4 col-form-label">Пароль</label>
-          <div class="col-8">
-            <input
-              type="password"
-              class="form-control"
-              name="dataForm[password]"
-              id="inputPass"
-              placeholder="dataForm password"
-            />
-          </div>
-        </div>
-
-        <div class="mb-3 row">
-          <label for="inputAge" class="col-4 col-form-label"
-            >Возраст пользователя</label
-          >
-          <div class="col-8">
-            <input
-              type="text"
-              class="form-control"
-              name="dataForm[age]"
-              id="inputAge"
-              placeholder="dataForm age"
-            />
-          </div>
-        </div>
-
-        <div class="mb-3 row">
-          <div class="offset-sm-4 col-sm-8">
-            <button type="submit" value="SignUp" class="btn btn-primary">
-              Регистрация
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </body>
-</html>
+      <header><%- include ('./partials/header') %></header>
+      <%- include ('./partials/menu') %>
+      <h1><%= title %></h1>
+      <%#- include ('./partials/messages') %>
+      <section class="register-content">
+        <div class="container-fluid">
+          <h1 class="text-center">Регистрация</h1>
+          <%- include('./partials/messages') %>
+              <form action="/register" method="post" name="user" class="p-3">
+                <div class="row g2 g-5">
+                  <div class="col-12 col-sm-6">
+                    <div class="form-floating mb-3 pb-0">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Имя"
+                        class="form-control"
+                        required
+                      /><label for="name">Имя:</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        class="form-control"
+                        required
+                      />
+                      <label for="email">Email:</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2 g-5">
+                  
+                  <div class="col-12 col-sm-6">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="age"
+                        name="age"
+                        id="age"
+                        class="form-control"
+                        placeholder="Возвраст"
+                        required
+                      /><label for="age">Возвраст:</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-control"
+                        placeholder="Пароль"
+                        required
+                      />
+                      <label for="password">Пароль:</label>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="row g-2 g-">
+                  <div class="col-12 col-sm-6">
+                    <div class="form-check">
+                      <label class="form-check-label" for="isAdmin">
+                        Вы админ?
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="1" id="isAdmin" name="isAdmin">
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-4">
+                  <button type="submit" class="btn btn-info">Регистрация</button>
+                  </div>
+                  </div>
+                  
+                  <div class="row g-2 g-5">
+                  <div class="col-12 col-sm-6">
+                  <a href="login" class="text-decoration-none">Уже зарегистрированны? Войти</a>
+                  </div>
+                  </div>
+               </form>
+      </section>
+      <footer><%- include('./partials/footer')%></footer>
+    </body>
+  </html>

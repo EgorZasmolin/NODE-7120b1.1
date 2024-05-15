@@ -1,10 +1,22 @@
-const User = require("../models/user");
-
-module.exports = function (req, res, next) {
-  if (!req.session.userEmail) return next();
-  User.findByEmail(req.session.userEmail, (err, userData) => {
-    if (err) return next(err);
-    if (userData) req.user = res.locals.user = userData;
-    next();
-  });
+const { User } = require("../models/db");
+module.exports = async function (req, res, next) {
+  try {
+    if (req.session.userEmail) {
+      const user = await User.findOne({
+        where: { email: req.session.userEmail },
+      });
+      if (!user) return next(new Error("User not found"));
+      if (user) {
+        req.user = res.locals.user = user;
+        res.locals.admin = user.isAdmin === 1 ? true : false;
+      }
+    }
+    if (req.session.passport) {
+      res.locals.user = req.session.passport.user;
+    }
+    return next();
+  } catch (error) {
+    logger.error(`Произошла ошибка: ${error}`);
+    return next(error);
+  }
 };

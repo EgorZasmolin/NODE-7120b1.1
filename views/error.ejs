@@ -1,4 +1,27 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
-<p>тут ошибка</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script defer src="/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <header><%- include ('./partials/header') %></header>
+    <div class="container mt-3 mb-3">
+      <h1><%= messages %></h1>
+      <h2><%= err.status %></h2>
+      <pre><%=err.stack %></pre>
+      <p>тут ошибка</p>
+    </div>
+    <footer><%- include ('./partials/footer') %></footer>
+  </body>
+</html>

@@ -1,27 +1,52 @@
-* {
-  font-family: sans-serif;
+/* custom.css */
+
+/* Изменение фона хедера */
+header .text-bg-dark {
+  background-color: #343a40; /* Темно-серый */
+  border-bottom: 2px solid #ff6f61; /* Оранжевая граница снизу */
 }
 
-.header-link {
-  color: white;
+/* Изменение стилей для текста в хедере */
+header .text-white {
+  color: #f8f9fa !important; /* Светло-серый */
 }
 
-.register-content {
+header .text-secondary {
+  color: #adb5bd !important; /* Серый */
+}
+
+/* Изменение цвета навигационных ссылок */
+header .nav-link {
+  color: #ffffff; /* Белый цвет текста */
+  transition: color 0.2s ease-in-out;
+}
+
+header .nav-link:hover {
+  color: #ff6f61; /* Оранжевый при наведении */
+}
+
+/* Изменение иконок */
+header svg.bi {
+  fill: #ffffff; /* Белый цвет иконок */
+}
+
+header .nav-link:hover svg.bi {
+  fill: #ff6f61; /* Оранжевый при наведении */
+}
+
+/* Изменение шрифта */
+body {
+  font-family: "Roboto", sans-serif; /* Использование шрифта Roboto */
+}
+
+/* Дополнительные стили для навигации */
+header .nav-link {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 15vh;
-}
-.register-content div {
-  max-width: 1000px;
+  text-align: center;
 }
 
-.login-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 22vh;
+header .nav-link svg.bi {
+  margin-bottom: 4px;
 }
-.login-content div {
-  max-width: 1000px;
-} /*# sourceMappingURL=index.css.map */

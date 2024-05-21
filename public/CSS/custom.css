@@ -1,0 +1,420 @@
+/* custom.css */
+
+/* custom.css */
+
+/* Изменение фона хедера */
+.custom-header {
+  background-color: #343a40; /* Темно-серый */
+  border-bottom: 2px solid #ff6f61; /* Оранжевая граница снизу */
+}
+
+/* Изменение стилей для текста в хедере */
+.custom-header .text-white {
+  color: #f8f9fa !important; /* Светло-серый */
+}
+
+.custom-header .text-secondary {
+  color: #adb5bd !important; /* Серый */
+}
+
+/* Изменение цвета навигационных ссылок */
+.custom-header .nav-link {
+  color: #ffffff; /* Белый цвет текста */
+  transition: color 0.2s ease-in-out;
+}
+
+.custom-header .nav-link:hover {
+  color: #ff6f61; /* Оранжевый при наведении */
+}
+
+/* Изменение иконок */
+.custom-header svg.bi {
+  fill: #ffffff; /* Белый цвет иконок */
+}
+
+.custom-header .nav-link:hover svg.bi {
+  fill: #ff6f61; /* Оранжевый при наведении */
+}
+
+/* Изменение шрифта */
+body {
+  font-family: "Roboto", sans-serif; /* Использование шрифта Roboto */
+}
+
+/* Дополнительные стили для навигации */
+.custom-header .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.custom-header .nav-link svg.bi {
+  margin-bottom: 4px;
+}
+
+/* Настройка навигационной панели */
+.custom-navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ff6f61;
+}
+
+.custom-nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Кастомные кнопки */
+.custom-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.custom-btn-light {
+  background-color: #f8f9fa;
+  color: #000;
+  border: 1px solid #ced4da;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.custom-btn-light:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+.custom-btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.custom-btn-primary:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Изменение стилей для имени пользователя */
+.name {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Убрать нижнюю границу */
+.visually-hidden {
+  border: none;
+}
+/* custom.css */
+
+/* Кастомные стили для карточек */
+.custom-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.custom-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-body {
+  padding: 15px;
+}
+
+.custom-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.custom-card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Кастомные кнопки для администратора */
+.btn-update,
+.btn-delete {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-update {
+  background-color: #ffc107;
+  color: #fff;
+  border: 1px solid #ffc107;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-update:hover {
+  background-color: #e0a800;
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: 1px solid #dc3545;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+  color: #fff;
+}
+/* custom.css */
+
+/* Кастомные стили для навигационного меню */
+.custom-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #343a40; /* Темный фон */
+}
+
+.custom-nav-item {
+  display: inline;
+  margin-right: 15px;
+}
+
+.custom-nav-link {
+  color: #fff; /* Белый текст */
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.2s ease-in-out;
+}
+
+.custom-nav-link:hover {
+  color: #ffc107; /* Золотой цвет при наведении */
+}
+
+.custom-text {
+  color: #6c757d; /* Средне-серый текст */
+}
+/* custom.css */
+
+/* Общие стили */
+.custom-container-fluid,
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.custom-text-center {
+  text-align: center;
+}
+
+.custom-login-content {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-primary-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-primary-button .auth-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.custom-form {
+  margin-top: 20px;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.custom-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.custom-col-sm-4 {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 10px;
+}
+
+.custom-col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.custom-form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.custom-form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.custom-invalid-feedback {
+  display: none;
+  color: #dc3545;
+}
+
+.custom-form-label {
+  display: block;
+  margin-top: 10px;
+}
+
+.custom-password-checkbox {
+  margin-right: 5px;
+}
+
+.custom-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.custom-btn-info {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+}
+
+.custom-text-decoration-none {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.custom-text-decoration-none:hover {
+  text-decoration: underline;
+}
+/* custom.css */
+
+/* Общие стили */
+.custom-container-fluid,
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.custom-text-center {
+  text-align: center;
+}
+
+.custom-register-content {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-form {
+  margin-top: 20px;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.custom-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.custom-col-sm-4 {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 10px;
+}
+
+.custom-col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.custom-form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.custom-form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.custom-invalid-feedback {
+  display: none;
+  color: #dc3545;
+}
+
+.custom-form-check {
+  margin-bottom: 10px;
+}
+
+.custom-form-check-input {
+  margin-right: 10px;
+}
+
+.custom-form-check-label {
+  display: inline-block;
+}
+
+.custom-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.custom-btn-info {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+}
+
+.custom-text-decoration-none {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.custom-text-decoration-none:hover {
+  text-decoration: underline;
+}

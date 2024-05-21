@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %> </title>
+    <link rel="stylesheet" href="/css/custom.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css" />
 </head>
@@ -14,26 +15,25 @@
     <div class="container">
     <%#- include ('./partials/messages') %>
     <% entries.forEach((entry)=>{ %>
-        <div class="card entry" style="width: 66rem;">
-            <div class="card-body ">
-                <h5 class="card-title"><%= entry.title %></h5>
-                <p class="card-text">
+        <div class="custom-card entry" style="width: 66rem;">
+            <div class="custom-card-body">
+                <h5 class="custom-card-title"><%= entry.title %></h5>
+                <p class="custom-card-text">
                     <%= entry.content %> 
                 </p>
                 </br>
-                <h6>Запостил :   <%= entry.username %> </h6>                
+                <h6>Запостил : <%= entry.username %></h6>                
                 <% if(locals.admin){ %>
                 <a href="/update/<%= entry.id %>" class="btn-update">
                     <i class="fa-solid fa-pen-to-square"></i>
                 </a>
                 <a href="/delete/<%= entry.id %>" class="btn-delete">
-                    <i class="fas fa-trash-alt" ></i>
+                    <i class="fas fa-trash-alt"></i>
                 </a>
-         
-                <%}%>
-                
+                <% } %>
             </div>
-        </div> 
+        </div>
+        
         </br>
     <% }) %> 
     </div>
